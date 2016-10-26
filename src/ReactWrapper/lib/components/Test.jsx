@@ -16,14 +16,6 @@ var Comment = React.createClass({
               <h2>{this.props.author}</h2>
               {this.props.text}
             </div>
-            // React.createElement('div', {
-            //         className: 'comment'
-            //     },
-            //     React.createElement('h2', {
-            //         className: 'commentAuthor'
-            //     }, this.props.author),
-            //     this.props.text
-            // )
         );
     }
 });
@@ -34,11 +26,6 @@ var CommentList = React.createClass({
             return (
               <Comment author={c.author} text={c.text} key={c.number} />
             )
-            // React.createElement(Comment, {
-            //     author: c.author,
-            //     text: c.text,
-            //     key: c.number
-            // })
         })
     },
     render: function() {
@@ -92,11 +79,6 @@ var CommentForm = React.createClass({
               <input type="submit" value="post" />
             </form>
           </div>
-            // <form className="commentForm">
-            //   <input type="text" placeholder="Your name" />
-            //   <input type="text" placeholder="Say something..." />
-            //   <input type="submit" value="Post" />
-            // </form>
         )
     }
 });
