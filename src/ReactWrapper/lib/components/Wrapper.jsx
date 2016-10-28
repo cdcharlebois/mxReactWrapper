@@ -2,13 +2,13 @@ var Wrapper = React.createClass({
   render: function(){
     return(
       <div>
-        <Test />
-        <CommentBox />
+        Hello from React
+        {/* <Test /> */}
+        {/* <CommentBox /> */}
       </div>
     )
   }
 });
-
 
 ReactDOM.render(
   <Wrapper/>,
